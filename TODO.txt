@@ -1,0 +1,32 @@
+FEED
+- Use cron instead of interval for fetching new messages, and don't fetch during the night
+- Use axios instead of https module
+- Better code structure, not everything in 1 file
+- Since a Discord Bot exists, maybe use that instead of webhooks
+- Notifs for File/Lecture Uploads/Updates
+- Notifs for WebWork/Ilias
+
+
+TU-GPT (in bot.js)
+- Train on PDFs from official TUHH websites
+- Generate LaTeX and render it?
+- Speed
+
+
+SERVER
+- Add DEV/PROD modes
+- Add logging
+- Rate limits and basic security
+- When user does /ical, check of the TUNE site actually downloads the ical file, and if not, tell user it is outdated
+- prevent ical downloads if the useragent gives away, that it's not the iOS calendar
+- Since the user's calendar is available, track it for updates and notify the user if something changes (per DMs)
+
+
+GENERAL
+- Add a proper README
+- Add a LICENSE
+- Make an API (on the server) giving access to all these features without having to code your own crawler
+- Replace deprecated dependencies
+- move SSL keys to env variables or config
+- Error handling, maybe use something like sentry, discord err log channel
+
